@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MetalSlug</title>
+    
+</head>
+<body>
+    <div  id="instructions" >
+        <h3>-Flechita arriba para subir.</h3>
+        <h3>-Flechita abajo para bajar.</h3>
+        <h3>-Flechita derecha para disparar</h3>
+        <h3>-Si llegas a 100 puntos ganas pero podes seguir jugando para ver cuantos puntos haces</h3>
+        <h3>-Si chocas un insecto o se termina el tiempo termina el juego.</h3>
+        <h3>-El power up hace que hagas mas daño con los disparos</h3>
+        <p></p>
+    <canvas id="canvas1"></canvas>
+
+
+    <div class = "buttons">
+        <button class = "button" id="botonRestart"></button>
+        <button class = "button" id="botonEmpezar"></button>
+    </div>
+    
+   
+    <!---personajes --->
+
+    <img id = "player" src="images/player.png"> 
+    <img id = "insecto" src="images/Insecto.png"> 
+   
+    <!--- props--->
+
+    <audio id="coinSound" src="sounds/coin.mp3" autoplay></audio>
+    <audio id="music" src="sounds/music.mp3" autoplay></audio>
+    <audio id="muerte" src="sounds/muerte.mp3" autoplay></audio>
+    <audio id="bichoMuerto" src="sounds/bichomuerto.mp3" autoplay></audio>
+    <audio id="win" src="sounds/win.mp3" autoplay></audio>
+    <img id = "coin" src="images/coin.png" hidden> 
+
+    <!--- entorno --->
+    <img id = "layer1" src="images/layer1.png">
+    <img id = "layer2" src="images/layer2.png">
+    <img id = "layer3" src="images/layer3.png">
+    <img id = "layer4" src="images/layer4.png">
+    
+
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/game.js"></script>
+<script src="js/coin.js"></script>
+<script src="js/sounds.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/insecto.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/player.js"></script>
+<script src="js/background.js"></script>
+<script src="js/layer.js"></script>
+<script src="js/inputHandler.js"></script>
+<script src="js/projectile.js"></script>
+
+</html>
